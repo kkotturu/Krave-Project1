@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project1-Krave</title>
+
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- Link to firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
+
+  <!-- Youtube API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <!-- custom CSS -->
+  <link href="assests/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="deep-orange lighten-4">
+  <!-- Could use grey lighten-1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-s12 header">
+        <img class="foodImg" src="assests/images/foodWithLogo2.jpg">
+      </div>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m5">
+            <i class="material-icons prefix">keyboard</i>
+            <input id="search" type="text" placeholder="What are you craving for?">
+          </div>
+
+          <div class="input-field col s6 offset-s1 m5">
+            <input id="zip" type="text" placeholder="Zipcode" maxlength="5">
+          </div>
+          <button class="waves-effect waves-grey lighten-4 btn-flat" id="submit" type="button" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div><br>
+    <div class="row">
+      <div class="col s12">
+        <table class="striped table">
+          <thead>
+            <tr>
+              <th>Recent Searches</th>
+              <th>Zipcode</th>
+            </tr>
+          </thead>
+          <tbody id="resultsTable">
+          </tbody>
+        </table>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col s12 m6 outPut" id="restaurants">
+        Restaurants
+      </div>
+
+      <div class="col s12 m6 outPut" id="recipes">
+        How to make?
+      </div>
+      <div id="player"></div>
+    </div>
+  </div>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="assests/js/app.js"></script>
+</body>
+
+</html>
